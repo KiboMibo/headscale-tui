@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use crate::api::types::{ApiKey, Node, PreAuthKey, User};
 
 // ── API Response Messages ──────────────────────────────────────────────────

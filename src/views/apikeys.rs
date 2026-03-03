@@ -20,7 +20,7 @@ impl ApiKeysView {
             selected: 0,
             loading: true,
             error: None,
-            width: 80,
+            width: 160,
             confirm_delete: false,
         }
     }

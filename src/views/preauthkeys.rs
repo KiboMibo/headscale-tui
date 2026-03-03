@@ -19,7 +19,7 @@ impl PreAuthKeysView {
             selected: 0,
             loading: true,
             error: None,
-            width: 80,
+            width: 160,
         }
     }
 

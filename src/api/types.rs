@@ -124,6 +124,7 @@ pub struct ListApiKeysResponse {
     pub api_keys: Vec<ApiKey>,
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct CreatePreAuthKeyRequest {
     pub user: String,
@@ -135,6 +136,7 @@ pub struct CreatePreAuthKeyRequest {
     pub acl_tags: Option<Vec<String>>,
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Deserialize)]
 pub struct CreateApiKeyResponse {
     #[serde(default, rename = "apiKey")]

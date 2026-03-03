@@ -476,3 +476,102 @@ pub fn cmd_delete_apikey(client: HeadscaleClient, prefix: String) -> bubbletea_r
         }
     })
 }
+
+#[allow(dead_code)]
+pub fn cmd_create_user(client: HeadscaleClient, name: String) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        match client.create_user(&name).await {
+            Ok(user) => Some(Box::new(UserCreatedMsg { user }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "creating user".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_rename_user(client: HeadscaleClient, old_id: String, new_name: String) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        match client.rename_user(&old_id, &new_name).await {
+            Ok(user) => Some(Box::new(UserCreatedMsg { user }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "renaming user".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_rename_node(client: HeadscaleClient, id: String, new_name: String) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        let id_clone = id.clone();
+        let name_clone = new_name.clone();
+        match client.rename_node(&id, &new_name).await {
+            Ok(()) => Some(Box::new(NodeRenamedMsg { id: id_clone, new_name: name_clone }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "renaming node".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_set_node_tags(client: HeadscaleClient, id: String, tags: Vec<String>) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        let id_clone = id.clone();
+        match client.set_node_tags(&id, tags).await {
+            Ok(()) => Some(Box::new(StatusMsg {
+                message: format!("Tags updated for node {}", id_clone),
+            }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "setting node tags".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_approve_routes(client: HeadscaleClient, id: String, routes: Vec<String>) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        let id_clone = id.clone();
+        match client.approve_routes(&id, routes).await {
+            Ok(()) => Some(Box::new(StatusMsg {
+                message: format!("Routes approved for node {}", id_clone),
+            }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "approving routes".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_create_preauthkey(client: HeadscaleClient, req: CreatePreAuthKeyRequest) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        match client.create_preauthkey(&req).await {
+            Ok(key) => Some(Box::new(PreAuthKeyCreatedMsg { key }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "creating preauthkey".to_string(),
+            }) as Msg),
+        }
+    })
+}
+
+#[allow(dead_code)]
+pub fn cmd_create_apikey(client: HeadscaleClient, expiration: Option<String>) -> bubbletea_rs::Cmd {
+    Box::pin(async move {
+        match client.create_apikey(expiration.as_deref()).await {
+            Ok(key) => Some(Box::new(ApiKeyCreatedMsg { key }) as Msg),
+            Err(e) => Some(Box::new(ApiErrorMsg {
+                error: e,
+                context: "creating apikey".to_string(),
+            }) as Msg),
+        }
+    })
+}

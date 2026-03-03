@@ -1,5 +1,4 @@
 use std::env;
-use std::path::PathBuf;
 
 #[derive(Debug, Clone)]
 pub struct Config {
@@ -24,6 +23,7 @@ impl Config {
         })
     }
 
+    #[allow(dead_code)]
     pub fn from_args(server_url: String, api_key: String) -> Self {
         let server_url = server_url.trim_end_matches('/').to_string();
         Config {

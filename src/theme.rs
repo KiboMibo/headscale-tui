@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use lipgloss_extras::lipgloss::{Color, Style};
 
 pub const PRIMARY: &str = "#7C3AED";
