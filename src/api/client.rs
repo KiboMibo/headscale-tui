@@ -206,6 +206,8 @@ impl HeadscaleClient {
 
     pub async fn list_preauthkeys(&self, user: Option<&str>) -> Result<Vec<PreAuthKey>, String> {
         let mut url = self.url("/api/v1/preauthkey");
+        // When no user is specified, we should fetch all preauthkeys
+        // If user is specified, filter by user
         if let Some(u) = user {
             url = format!("{}?user={}", url, u);
         }
@@ -372,12 +374,16 @@ pub fn cmd_load_nodes(client: HeadscaleClient) -> bubbletea_rs::Cmd {
 
 pub fn cmd_load_preauthkeys(client: HeadscaleClient) -> bubbletea_rs::Cmd {
     Box::pin(async move {
+        // Try to load preauthkeys without specifying a user first
         match client.list_preauthkeys(None).await {
             Ok(keys) => Some(Box::new(PreAuthKeysLoadedMsg { keys }) as Msg),
-            Err(e) => Some(Box::new(ApiErrorMsg {
-                error: e,
-                context: "loading preauthkeys".to_string(),
-            }) as Msg),
+            Err(e) => {
+                // If that fails, we'll display the error in the UI
+                Some(Box::new(ApiErrorMsg {
+                    error: e,
+                    context: "loading preauthkeys".to_string(),
+                }) as Msg)
+            }
         }
     })
 }

@@ -87,7 +87,7 @@ pub struct PreAuthKey {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct ApiKey {
     #[serde(default)]
-    pub id: String,
+    pub id: String, // Headscale API actually returns string IDs despite proto saying uint64
     #[serde(default)]
     pub prefix: String,
     #[serde(default)]

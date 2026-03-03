@@ -20,7 +20,7 @@ impl NodesView {
             selected: 0,
             loading: true,
             error: None,
-            width: 80,
+            width: 160,
             confirm_delete: false,
         }
     }
@@ -82,8 +82,18 @@ impl NodesView {
             .map(|n| {
                 let status = if n.online { "●" } else { "○" };
                 let user_name = n.user.as_ref().map(|u| u.name.clone()).unwrap_or_default();
-                let ips = n.ip_addresses.join(", ");
-                let tags = n.tags.join(", ");
+                // Limit IP addresses display to prevent table overflow
+                let ips = if n.ip_addresses.len() > 3 {
+                    format!("{} IPs...", n.ip_addresses.len())
+                } else {
+                    n.ip_addresses.join(", ")
+                };
+                // Limit tags display to prevent table overflow
+                let tags = if n.tags.len() > 5 {
+                    format!("{} tags...", n.tags.len())
+                } else {
+                    n.tags.join(", ")
+                };
 
                 vec![
                     n.id.to_string(),

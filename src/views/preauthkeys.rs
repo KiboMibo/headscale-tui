@@ -79,13 +79,22 @@ impl PreAuthKeysView {
             .keys
             .iter()
             .map(|k| {
-                let user_name = k.user.as_ref().map(|u| u.name.clone()).unwrap_or_default();
+                let user_name = k
+                    .user
+                    .as_ref()
+                    .map(|u| u.name.clone())
+                    .unwrap_or_else(|| "N/A".to_string());
                 let key_preview = if k.key.len() > 12 {
                     format!("{}...", &k.key[..12])
                 } else {
                     k.key.clone()
                 };
-                let tags = k.acl_tags.join(", ");
+                // Limit tags display to prevent table overflow
+                let tags = if k.acl_tags.len() > 3 {
+                    format!("{} tags...", k.acl_tags.len())
+                } else {
+                    k.acl_tags.join(", ")
+                };
 
                 vec![
                     k.id.to_string(),
