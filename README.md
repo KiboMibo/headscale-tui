@@ -1,41 +1,89 @@
-HEADSCALE-TUI - TUI client provides a robust interface for managing Headscale services
+# heascale-tui
 
-📁 Project Structure
+TUI-клиент для управления [Headscale](https://headscale.net/) через HTTP API.
 
-- Modular Rust application with clean separation of concerns
-- Proper Cargo.toml with all dependencies (bubbletea-rs, reqwest, serde, chrono, clap)
-- Well-organized source directory structure
-  ⚡ Core Components
+## Возможности
 
-1. API Layer - Complete Serde models for all Headscale entities (User, Node, PreAuthKey, ApiKey)
-2. HTTP Client - Comprehensive HeadscaleClient with all CRUD operations
-3. Views Layer - Interactive table views for Users, Nodes, PreAuth Keys, and API Keys
-4. Main App - Tab-based navigation with keyboard controls and responsive design
-5. Configuration - Environment-based config loading
-6. Theme System - Consistent color scheme and styling
-   🎮 Features Implemented
+- Вкладки: `Users`, `Nodes`, `PreAuth Keys`, `API Keys`
+- Загрузка и просмотр сущностей
+- Создание:
+  - `User` (пошагово: `name` -> `display name` -> `email`)
+  - `PreAuthKey`
+  - `API key`
+- Действия:
+  - `User`: delete
+  - `Node`: delete, expire
+  - `PreAuthKey`: expire
+  - `API key`: expire, delete
+- Копирование в буфер обмена:
+  - `Enter` на `PreAuthKey` копирует полный ключ
+  - `Enter` на `API key` копирует полный ключ, если он был создан в текущей сессии; иначе копирует `prefix`
 
-- Tab navigation (1-4 keys or arrow keys)
-- Interactive table views with sorting/scrolling
-- Full CRUD operations (view, create, delete, expire, rename)
-- Confirmation dialogs for destructive actions
-- Responsive design with window resizing
-- Proper error handling throughout
-- Professional dark-themed UI with color-coded statuses
-  🔧 Technical Details
-  Architecture: Follows bubbletea-rs Elm architecture pattern with:
-- Model trait implementation with init/update/view methods
-- Async Cmd execution for HTTP requests
-- Custom message types for all API responses
-- Keyboard event handling for navigation and actions
-  Dependencies:
-- bubbletea-rs = "0.0.9" (TUI framework)
-- reqwest = { version = "0.12", features = "json", "rustls-tls" }
-- serde = { version = "1", features = "derive" }
-- chrono = { version = "0.4", features = "serde" }
-- clap = { version = "4", features = "derive" }
-- tokio = { version = "1", features = "full" }
-  Code Quality:
-- Successfully compiles with cargo build
-- Only warnings are about unused code (expected during development)
-- Ready for runtime testing with actual Headscale server
+## Требования
+
+- Rust stable (рекомендуется через `rustup`)
+- Доступ к Headscale API
+
+## Установка и запуск
+
+```bash
+git clone https://github.com/heascale/heascale-tui.git
+cd heascale-tui
+cargo run
+```
+
+Или с явной настройкой окружения:
+
+```bash
+HEADSCALE_URL="https://headscale.com" \
+HEADSCALE_API_KEY="<your_api_key>" \
+cargo run
+```
+
+## Конфигурация
+
+Используются переменные окружения:
+
+- `HEADSCALE_URL` (или `HEADSCALE_SERVER`) - базовый URL сервера
+- `HEADSCALE_API_KEY` - API ключ Headscale
+
+Пример:
+
+```bash
+export HEADSCALE_URL="https://headscale.com"
+export HEADSCALE_API_KEY="hsk_xxx"
+cargo run
+```
+
+## Горячие клавиши
+
+- `Tab` / `Shift+Tab` / `←` / `→` - переключение вкладок
+- `1..4` - перейти к вкладке
+- `↑` / `↓` или `j` / `k` - навигация по таблице
+- `r` - обновить текущую вкладку
+- `c` - создать сущность в текущей вкладке
+- `d` - удалить (где доступно)
+- `e` - expire (где доступно)
+- `Enter` - копировать ключ (`PreAuthKeys` / `ApiKeys`)
+- `q` / `Esc` - выход
+
+## Особенности Headscale API
+
+- Полный секрет `API key` возвращается только в момент создания.
+- `ListApiKeys` возвращает только `prefix` и метаданные.
+- Поэтому старые API-ключи невозможно восстановить через API после создания.
+
+## Логи
+
+Приложение пишет логи в файл:
+
+```text
+./heascale-tui.log
+```
+
+## Сборка
+
+```bash
+cargo check
+cargo build --release
+```
