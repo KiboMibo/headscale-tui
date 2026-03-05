@@ -40,9 +40,9 @@ pub struct Node {
     pub name: String,
     pub user: Option<User>,
     #[serde(default, rename = "lastSeen")]
-    pub last_seen: String,
+    pub last_seen: Option<String>,
     #[serde(default)]
-    pub expiry: String,
+    pub expiry: Option<String>,
     #[serde(default, rename = "createdAt")]
     pub created_at: String,
     #[serde(default, rename = "registerMethod")]
@@ -75,7 +75,7 @@ pub struct PreAuthKey {
     #[serde(default)]
     pub used: bool,
     #[serde(default)]
-    pub expiration: String,
+    pub expiration: Option<String>,
     #[serde(default, rename = "createdAt")]
     pub created_at: String,
     #[serde(default, rename = "aclTags")]
@@ -91,11 +91,11 @@ pub struct ApiKey {
     #[serde(default)]
     pub prefix: String,
     #[serde(default)]
-    pub expiration: String,
+    pub expiration: Option<String>,
     #[serde(default, rename = "createdAt")]
-    pub created_at: String,
+    pub created_at: Option<String>,
     #[serde(default, rename = "lastSeen")]
-    pub last_seen: String,
+    pub last_seen: Option<String>,
 }
 
 // ── API Response Wrappers ──────────────────────────────────────────────────

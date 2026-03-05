@@ -101,7 +101,7 @@ impl NodesView {
                     user_name,
                     ips,
                     status.to_string(),
-                    format_time(&n.last_seen),
+                    format_time(n.last_seen.as_deref()),
                     tags,
                 ]
             })
@@ -151,7 +151,10 @@ impl NodesView {
     }
 }
 
-fn format_time(ts: &str) -> String {
+fn format_time(ts: Option<&str>) -> String {
+    let Some(ts) = ts else {
+        return "-".to_string();
+    };
     if ts.is_empty() {
         return "-".to_string();
     }

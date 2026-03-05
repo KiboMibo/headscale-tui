@@ -81,9 +81,9 @@ impl ApiKeysView {
                 vec![
                     k.id.to_string(),
                     k.prefix.clone(),
-                    format_time(&k.expiration),
-                    format_time(&k.created_at),
-                    format_time(&k.last_seen),
+                    format_time(k.expiration.as_deref()),
+                    format_time(k.created_at.as_deref()),
+                    format_time(k.last_seen.as_deref()),
                 ]
             })
             .collect();
@@ -126,13 +126,16 @@ impl ApiKeysView {
 
         let help = Style::new()
             .foreground(Color(theme::MUTED.to_string()))
-            .render("  ↑/↓ navigate • c create • d delete • e expire • r refresh • q quit");
+            .render("  ↑/↓ navigate • Enter copy prefix • c create • d delete • e expire • r refresh • q quit");
 
         format!("{}\n{}", output, help)
     }
 }
 
-fn format_time(ts: &str) -> String {
+fn format_time(ts: Option<&str>) -> String {
+    let Some(ts) = ts else {
+        return "-".to_string();
+    };
     if ts.is_empty() {
         return "-".to_string();
     }

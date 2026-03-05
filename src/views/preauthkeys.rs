@@ -103,7 +103,7 @@ impl PreAuthKeysView {
                     bool_symbol(k.reusable),
                     bool_symbol(k.ephemeral),
                     bool_symbol(k.used),
-                    format_time(&k.expiration),
+                    format_time(k.expiration.as_deref()),
                     tags,
                 ]
             })
@@ -135,7 +135,7 @@ impl PreAuthKeysView {
 
         let help = Style::new()
             .foreground(Color(theme::MUTED.to_string()))
-            .render("  ↑/↓ navigate • c create • e expire • r refresh • q quit");
+            .render("  ↑/↓ navigate • Enter copy key • c create • e expire • r refresh • q quit");
 
         format!("{}\n{}", output, help)
     }
@@ -149,7 +149,10 @@ fn bool_symbol(v: bool) -> String {
     }
 }
 
-fn format_time(ts: &str) -> String {
+fn format_time(ts: Option<&str>) -> String {
+    let Some(ts) = ts else {
+        return "-".to_string();
+    };
     if ts.is_empty() {
         return "-".to_string();
     }

@@ -1,0 +1,1070 @@
+2026-03-04T18:55:40.931269Z  INFO heascale_tui: heascale-tui starting
+2026-03-04T18:55:40.933904Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-04T18:55:40.933909Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-04T18:55:40.934007Z DEBUG heascale_tui::app: Init render message received
+2026-03-04T18:55:40.934449Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-04T18:55:40.936698Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-04T18:55:40.936727Z DEBUG heascale_tui::app: Window resize event width=190 height=56
+2026-03-04T18:55:40.991831Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-04T18:55:41.002330Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-04T18:55:42.130617Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-04T18:55:42.130924Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-04T18:55:42.130970Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-04T18:55:42.131111Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-04T18:55:42.131176Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-04T18:55:42.131212Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-04T18:55:46.187200Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:55:46.187356Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T18:55:46.187761Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-04T18:55:46.187993Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-04T18:56:00.026334Z DEBUG hyper_util::client::legacy::client: client connection error: hyper::Error(Shutdown, Os { code: 32, kind: BrokenPipe, message: "Broken pipe" })
+2026-03-04T18:56:00.026698Z ERROR heascale_tui::api::client: list_nodes request failed url=https://hedtl.serveirc.com/api/v1/node error=error sending request for url (https://hedtl.serveirc.com/api/v1/node)
+2026-03-04T18:56:00.026801Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-04T18:56:00.026826Z ERROR heascale_tui::app: API error occurred context=loading nodes error=Request failed: error sending request for url (https://hedtl.serveirc.com/api/v1/node)
+2026-03-04T18:56:04.010432Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:04.010516Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T18:56:04.012101Z DEBUG heascale_tui::api::client: list_preauthkeys request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey user=None
+2026-03-04T18:56:04.012235Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-04T18:56:04.018294Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-04T18:56:04.029310Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-04T18:56:05.059697Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-04T18:56:05.060009Z ERROR heascale_tui::api::client: list_preauthkeys HTTP error status=500 Internal Server Error body={"code":2,"message":"user not found","details":[]}
+2026-03-04T18:56:05.060149Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-04T18:56:05.060188Z ERROR heascale_tui::app: API error occurred context=loading preauthkeys error=HTTP 500 Internal Server Error: {"code":2,"message":"user not found","details":[]}
+2026-03-04T18:56:08.399354Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:08.399412Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T18:56:08.399614Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-04T18:56:08.399707Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-04T18:56:08.775118Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-04T18:56:08.775376Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"1","prefix":"lyo9DWp","expiration":"2026-04-15T17:39:17.591143132Z","createdAt":"2026-01-15T17:39:17.672435332Z","lastSeen":null},{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-04T18:56:08.775808Z ERROR heascale_tui::api::client: list_apikeys parse error body={"apiKeys":[{"id":"1","prefix":"lyo9DWp","expiration":"2026-04-15T17:39:17.591143132Z","createdAt":"2026-01-15T17:39:17.672435332Z","lastSeen":null},{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]} error=invalid type: null, expected a string at line 1 column 147
+2026-03-04T18:56:08.775890Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-04T18:56:08.775934Z ERROR heascale_tui::app: API error occurred context=loading apikeys error=Parse error: invalid type: null, expected a string at line 1 column 147
+2026-03-04T18:56:09.698601Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:09.698663Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-04T18:56:10.020213Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:10.020411Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-04T18:56:11.368105Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:11.368200Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-04T18:56:13.324846Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:13.324882Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T18:56:18.623544Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:18.623618Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-04T18:56:20.220075Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:20.220132Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-04T18:56:22.621101Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:56:22.621203Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-04T18:57:07.372656Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:57:07.372815Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T18:57:11.533627Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T18:57:11.533688Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-04T19:00:53.954254Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-04T19:00:53.954404Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-04T19:00:53.954600Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-04T19:00:53.956259Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T17:53:26.727321Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T17:53:26.729607Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T17:53:26.729614Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T17:53:26.729631Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T17:53:26.730351Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T17:53:26.733722Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T17:53:26.733747Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T17:53:26.793465Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T17:53:26.802633Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T17:53:27.766448Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:27.767417Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T17:53:27.767446Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T17:53:27.767532Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T17:53:27.767571Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T17:53:27.767580Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-05T17:53:30.503388Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:30.503488Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T17:53:31.214798Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:31.214872Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T17:53:31.733759Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:31.733844Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T17:53:31.734083Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T17:53:31.734205Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:32.224471Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:32.224557Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T17:53:32.226783Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T17:53:32.226892Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T17:53:32.226922Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T17:53:33.373884Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:33.373945Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T17:53:33.780316Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:33.780402Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T17:53:34.004423Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:34.004476Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T17:53:35.337024Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:35.337147Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T17:53:35.837475Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:35.837528Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T17:53:36.474467Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:36.474505Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T17:53:36.861435Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:36.861477Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T17:53:37.146751Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:37.147991Z DEBUG heascale_tui::app: Key event received key=Char(' ')
+2026-03-05T17:53:37.447742Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:37.447802Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T17:53:37.665294Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:37.665372Z DEBUG heascale_tui::app: Key event received key=Char(' ')
+2026-03-05T17:53:37.997941Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:37.998034Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T17:53:39.669058Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:39.669150Z DEBUG heascale_tui::app: Key event received key=Char('r')
+2026-03-05T17:53:39.669314Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T17:53:39.669427Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:39.991394Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:39.991382Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T17:53:39.991524Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T17:53:39.991558Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T17:53:39.991567Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T17:53:43.629069Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:43.629146Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T17:53:44.048796Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:44.048895Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T17:53:44.050702Z DEBUG heascale_tui::api::client: list_preauthkeys request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey user=None
+2026-03-05T17:53:44.050931Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:44.375654Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:44.375936Z ERROR heascale_tui::api::client: list_preauthkeys HTTP error status=500 Internal Server Error body={"code":2,"message":"user not found","details":[]}
+2026-03-05T17:53:44.376043Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-05T17:53:44.376083Z ERROR heascale_tui::app: API error occurred context=loading preauthkeys error=HTTP 500 Internal Server Error: {"code":2,"message":"user not found","details":[]}
+2026-03-05T17:53:45.183459Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:45.183785Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T17:53:45.184076Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T17:53:45.184213Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:45.510805Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:53:45.510990Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"1","prefix":"lyo9DWp","expiration":"2026-04-15T17:39:17.591143132Z","createdAt":"2026-01-15T17:39:17.672435332Z","lastSeen":null},{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-05T17:53:45.511070Z ERROR heascale_tui::api::client: list_apikeys parse error body={"apiKeys":[{"id":"1","prefix":"lyo9DWp","expiration":"2026-04-15T17:39:17.591143132Z","createdAt":"2026-01-15T17:39:17.672435332Z","lastSeen":null},{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]} error=invalid type: null, expected a string at line 1 column 147
+2026-03-05T17:53:45.511143Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-05T17:53:45.511189Z ERROR heascale_tui::app: API error occurred context=loading apikeys error=Parse error: invalid type: null, expected a string at line 1 column 147
+2026-03-05T17:53:49.626188Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:53:49.626285Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T17:53:49.626749Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T17:53:49.628759Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T17:55:17.037553Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T17:55:17.040014Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T17:55:17.040028Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T17:55:17.040045Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T17:55:17.040718Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T17:55:17.121345Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T17:55:17.130952Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T17:55:18.161337Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:55:18.161696Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T17:55:18.161779Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T17:55:18.161932Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T17:55:18.162020Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T17:55:18.162069Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-05T17:55:18.848406Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:55:18.848475Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T17:55:18.848637Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T17:55:18.848768Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:55:19.170936Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:55:19.171036Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T17:55:19.171286Z DEBUG heascale_tui::api::client: list_preauthkeys request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey user=None
+2026-03-05T17:55:19.171518Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T17:55:19.175869Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T17:55:19.184681Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T17:55:19.274196Z DEBUG hyper_util::client::legacy::pool: reuse idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:55:19.274215Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T17:55:19.274605Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T17:55:19.274716Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T17:55:19.274774Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T17:55:19.592011Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:55:19.592386Z ERROR heascale_tui::api::client: list_preauthkeys HTTP error status=500 Internal Server Error body={"code":2,"message":"user not found","details":[]}
+2026-03-05T17:55:19.592505Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-05T17:55:19.592530Z ERROR heascale_tui::app: API error occurred context=loading preauthkeys error=HTTP 500 Internal Server Error: {"code":2,"message":"user not found","details":[]}
+2026-03-05T17:55:19.700419Z DEBUG hyper_util::client::legacy::pool: pooling idle connection for ("https", hedtl.serveirc.com)
+2026-03-05T17:56:19.666984Z DEBUG hyper_util::client::legacy::client: client connection error: hyper::Error(IncompleteMessage)
+2026-03-05T17:59:17.360138Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T17:59:17.360213Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T17:59:17.360617Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T17:59:17.362358Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T17:59:59.665473Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T17:59:59.667292Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T17:59:59.667308Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T17:59:59.667347Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T17:59:59.667769Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T17:59:59.668699Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T17:59:59.668718Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:00:00.258817Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:00.270688Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:01.228200Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:00:01.228294Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:00:01.228460Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T18:00:01.228586Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:00:01.228610Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-05T18:00:04.077584Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:04.077677Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:00:07.399410Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:07.399454Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:00:07.407241Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:07.407265Z DEBUG heascale_tui::app: Key event received key=Char('r')
+2026-03-05T18:00:07.428900Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:07.428963Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:00:08.096716Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:08.096812Z DEBUG heascale_tui::app: Key event received key=Backspace
+2026-03-05T18:00:08.269497Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:08.269550Z DEBUG heascale_tui::app: Key event received key=Backspace
+2026-03-05T18:00:08.375831Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:08.375930Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:00:08.650977Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:08.651082Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:00:08.852179Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:08.852271Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:00:09.296624Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:09.296672Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:00:09.297254Z DEBUG heascale_tui::api::client: create_user request method="POST" url=https://hedtl.serveirc.com/api/v1/user body={"name":"test"}
+2026-03-05T18:00:09.297387Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:09.301404Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:09.311956Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:10.221090Z DEBUG heascale_tui::api::client: create_user response status=200 OK body={"user":{"id":"2","name":"test","createdAt":"2026-03-05T18:00:10.158271067Z","displayName":"","email":"","providerId":"","provider":"","profilePicUrl":""}}
+2026-03-05T18:00:10.221255Z  INFO heascale_tui::api::client: create_user success user_name=test
+2026-03-05T18:00:10.221328Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xd0e325e72f2cd25a1498b3786a9ba2df)
+2026-03-05T18:00:10.221373Z DEBUG heascale_tui::app: User mutation success, refreshing users
+2026-03-05T18:00:10.221541Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:00:10.221641Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:10.225406Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:10.235106Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:11.196551Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:00:11.196663Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"2","name":"test","createdAt":"2026-03-05T18:00:10.158271067Z","displayName":"","email":"","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:00:11.196695Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:00:11.197199Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:00:11.197227Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:00:20.793916Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:20.794350Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:00:20.794543Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:00:20.796112Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:20.797830Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:20.812425Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:21.702969Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:00:21.703080Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:00:21.703131Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T18:00:21.703171Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:00:25.625020Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:25.625041Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:00:25.625156Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:00:25.625256Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:25.627365Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:25.652365Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:26.526800Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:00:26.526906Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"2","name":"test","createdAt":"2026-03-05T18:00:10.158271067Z","displayName":"","email":"","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:00:26.526942Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:00:26.526977Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:00:26.527046Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:26.530962Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:26.540714Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:27.477946Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:00:27.477979Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:00:27.477989Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:00:27.478012Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:27.479699Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:27.491248Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:28.487351Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]}]} user="1"
+2026-03-05T18:00:28.487705Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=3 user="1"
+2026-03-05T18:00:28.487749Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:00:28.487884Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:28.493246Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:28.504385Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:29.428251Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:00:29.428442Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:00:29.428471Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=2 user="2"
+2026-03-05T18:00:29.428602Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:29.433198Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:29.442507Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:30.381530Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="2"
+2026-03-05T18:00:30.383006Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="2"
+2026-03-05T18:00:30.383122Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=3
+2026-03-05T18:00:30.384288Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc38ddc68ec5606d2613547b14a8e3705)
+2026-03-05T18:00:30.384339Z DEBUG heascale_tui::app: PreAuth keys loaded count=3
+2026-03-05T18:00:43.408632Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:43.408902Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:00:43.409065Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:00:43.409187Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:00:43.413017Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:00:43.429159Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:00:44.346650Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"1","prefix":"lyo9DWp","expiration":"2026-04-15T17:39:17.591143132Z","createdAt":"2026-01-15T17:39:17.672435332Z","lastSeen":null},{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-05T18:00:44.346964Z  INFO heascale_tui::api::client: list_apikeys loaded count=2
+2026-03-05T18:00:44.348104Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xbe9b368d0b8a294182ed725fe7213d90)
+2026-03-05T18:00:44.348185Z DEBUG heascale_tui::app: API keys loaded count=2
+2026-03-05T18:00:58.846920Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:00:58.847004Z DEBUG heascale_tui::app: Key event received key=Char('d')
+2026-03-05T18:01:00.913199Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:00.913236Z DEBUG heascale_tui::app: Key event received key=Char('y')
+2026-03-05T18:01:00.913501Z DEBUG heascale_tui::api::client: delete_apikey request method="DELETE" url=https://hedtl.serveirc.com/api/v1/apikey/lyo9DWp prefix=lyo9DWp
+2026-03-05T18:01:00.913556Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:01:00.915161Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:01:01.002065Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:01:02.043431Z DEBUG heascale_tui::api::client: delete_apikey response status=200 OK body={}
+2026-03-05T18:01:02.044637Z  INFO heascale_tui::api::client: delete_apikey success prefix=lyo9DWp
+2026-03-05T18:01:02.045887Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x5fd8b117af85d023c05d63a413285215)
+2026-03-05T18:01:02.045945Z DEBUG heascale_tui::app: ApiKey mutation success, refreshing apikeys
+2026-03-05T18:01:02.046726Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:01:02.046870Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:01:02.057471Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:01:02.069404Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:01:03.010028Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-05T18:01:03.010147Z  INFO heascale_tui::api::client: list_apikeys loaded count=1
+2026-03-05T18:01:03.010212Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xbe9b368d0b8a294182ed725fe7213d90)
+2026-03-05T18:01:03.010242Z DEBUG heascale_tui::app: API keys loaded count=1
+2026-03-05T18:01:04.867186Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:04.867271Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:01:05.241072Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:05.241149Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:01:05.457275Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:05.457354Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:01:06.577293Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:06.577343Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:01:07.079704Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:07.079764Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:07.294798Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:07.294874Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:08.586087Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:08.586129Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:09.028442Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:09.028529Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:09.268711Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:09.268798Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:09.824240Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:09.824404Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:01:10.191191Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:10.191264Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:10.400070Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:10.401135Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:10.761805Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:10.761850Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:10.982947Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:10.983010Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:11.162139Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:11.162197Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:13.494062Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:13.494096Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:01:13.705949Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:13.705988Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:01:14.792399Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:14.792478Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:01:15.200819Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:15.200916Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:15.463375Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:15.463444Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:01:56.847019Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:56.848474Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:01:57.434656Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:01:57.434746Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:12:04.604423Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:04.605957Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:12:04.606651Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:12:04.606971Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:12:14.654531Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:12:14.656331Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:12:14.656375Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T18:12:14.656388Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:12:14.657073Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:14.658715Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:12:14.658734Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:12:14.743701Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:14.753396Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:15.841222Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:12:15.860475Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"2","name":"test","createdAt":"2026-03-05T18:00:10.158271067Z","displayName":"","email":"","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:12:15.860663Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:12:15.861218Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:12:15.861268Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:12:18.090472Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:18.090557Z DEBUG heascale_tui::app: Key event received key=Char('d')
+2026-03-05T18:12:21.156905Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:21.156957Z DEBUG heascale_tui::app: Key event received key=Esc
+2026-03-05T18:12:21.459081Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:21.459114Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:12:22.115846Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:22.115924Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:12:23.215219Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:23.215270Z DEBUG heascale_tui::app: Key event received key=Esc
+2026-03-05T18:12:23.215819Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:12:23.216017Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:12:24.790246Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:12:24.790412Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:12:24.790447Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T18:12:24.790486Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:12:24.790471Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:24.791356Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:12:24.791370Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:12:24.794535Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:24.805607Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:25.823327Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:12:25.823364Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"2","name":"test","createdAt":"2026-03-05T18:00:10.158271067Z","displayName":"","email":"","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:12:25.823379Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:12:25.823422Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:12:25.823435Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:12:26.308795Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:26.308842Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:12:26.737385Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:26.737402Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:12:27.060493Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:27.060548Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:12:27.456853Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:27.456947Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:12:27.816009Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:27.816101Z DEBUG heascale_tui::app: Key event received key=Up
+2026-03-05T18:12:28.572657Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:28.572750Z DEBUG heascale_tui::app: Key event received key=Char('d')
+2026-03-05T18:12:30.292208Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:30.292291Z DEBUG heascale_tui::app: Key event received key=Esc
+2026-03-05T18:12:31.408054Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:31.408107Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:12:32.319620Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:32.319712Z DEBUG heascale_tui::app: Key event received key=Char('d')
+2026-03-05T18:12:34.224136Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:34.224233Z DEBUG heascale_tui::app: Key event received key=Char('y')
+2026-03-05T18:12:34.224931Z DEBUG heascale_tui::api::client: delete_user request method="DELETE" url=https://hedtl.serveirc.com/api/v1/user/2 id=2
+2026-03-05T18:12:34.225125Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:34.229295Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:34.238540Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:35.335193Z DEBUG heascale_tui::api::client: delete_user response status=200 OK body={}
+2026-03-05T18:12:35.335389Z  INFO heascale_tui::api::client: delete_user success id=2
+2026-03-05T18:12:35.335474Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x14953ca1be3b048117e539cfce439173)
+2026-03-05T18:12:35.335513Z DEBUG heascale_tui::app: User mutation success, refreshing users
+2026-03-05T18:12:35.336077Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:12:35.336242Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:35.347505Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:35.357740Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:36.371982Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:12:36.372151Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:12:36.372213Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T18:12:36.372275Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:12:36.372316Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-05T18:12:38.161178Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:38.161259Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:12:38.161429Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:12:38.161561Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:38.165018Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:38.181579Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:38.666141Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:38.666194Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:12:38.666413Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:12:38.666525Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:38.670542Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:38.685581Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:39.120930Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:12:39.121445Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:12:39.121634Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T18:12:39.121682Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:12:39.662746Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:12:39.662855Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:12:39.662881Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T18:12:39.662907Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:12:39.662987Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:39.667478Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:39.676207Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:40.776561Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:12:40.779515Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:12:40.780115Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:12:40.781045Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:12:40.784783Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:12:40.807832Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:12:41.745074Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]}]} user="1"
+2026-03-05T18:12:41.745107Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=3 user="1"
+2026-03-05T18:12:41.745113Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=3
+2026-03-05T18:12:41.745154Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc38ddc68ec5606d2613547b14a8e3705)
+2026-03-05T18:12:41.745165Z DEBUG heascale_tui::app: PreAuth keys loaded count=3
+2026-03-05T18:12:46.851706Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:46.856606Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:12:55.283289Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:55.283392Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:12:58.200134Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:58.200245Z DEBUG heascale_tui::app: Key event received key=Char('k')
+2026-03-05T18:12:58.405561Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:58.405650Z DEBUG heascale_tui::app: Key event received key=Char('i')
+2026-03-05T18:12:58.668751Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:58.668852Z DEBUG heascale_tui::app: Key event received key=Char('b')
+2026-03-05T18:12:58.752873Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:58.753000Z DEBUG heascale_tui::app: Key event received key=Char('o')
+2026-03-05T18:12:59.072545Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:59.072582Z DEBUG heascale_tui::app: Key event received key=Char('m')
+2026-03-05T18:12:59.315193Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:59.315290Z DEBUG heascale_tui::app: Key event received key=Char('i')
+2026-03-05T18:12:59.874782Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:59.874883Z DEBUG heascale_tui::app: Key event received key=Char('b')
+2026-03-05T18:12:59.962793Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:12:59.962885Z DEBUG heascale_tui::app: Key event received key=Char('o')
+2026-03-05T18:13:04.523808Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:04.523871Z DEBUG heascale_tui::app: Key event received key=Char(' ')
+2026-03-05T18:13:06.611227Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:06.611305Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:07.877531Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:07.877640Z DEBUG heascale_tui::app: Key event received key=Char('p')
+2026-03-05T18:13:08.134784Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:08.134865Z DEBUG heascale_tui::app: Key event received key=Char('j')
+2026-03-05T18:13:08.511670Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:08.511757Z DEBUG heascale_tui::app: Key event received key=Backspace
+2026-03-05T18:13:08.796933Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:08.797010Z DEBUG heascale_tui::app: Key event received key=Char('h')
+2026-03-05T18:13:08.896024Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:08.896110Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:09.173780Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:09.178026Z DEBUG heascale_tui::app: Key event received key=Char('m')
+2026-03-05T18:13:09.278593Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:09.278686Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:10.316124Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:10.316192Z DEBUG heascale_tui::app: Key event received key=Char('r')
+2026-03-05T18:13:10.412860Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:10.412906Z DEBUG heascale_tui::app: Key event received key=Char('a')
+2026-03-05T18:13:10.983812Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:10.983866Z DEBUG heascale_tui::app: Key event received key=Char('l')
+2026-03-05T18:13:13.958216Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:13.958264Z DEBUG heascale_tui::app: Key event received key=Char(' ')
+2026-03-05T18:13:14.848790Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:14.848886Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:14.950349Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:14.950442Z DEBUG heascale_tui::app: Key event received key=Char('a')
+2026-03-05T18:13:15.245715Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:15.245851Z DEBUG heascale_tui::app: Key event received key=Char('g')
+2026-03-05T18:13:15.611817Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:15.611909Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:13:17.199683Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:17.199750Z DEBUG heascale_tui::app: Key event received key=Char('=')
+2026-03-05T18:13:17.920526Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:17.920614Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:17.989506Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:17.989602Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:18.218406Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:18.218467Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:13:18.445733Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:18.446354Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:18.972390Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:18.972488Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:13:18.972956Z DEBUG heascale_tui::api::client: create_preauthkey request method="POST" url=https://hedtl.serveirc.com/api/v1/preauthkey body={"user":"kibomibo","reusable":false,"ephemeral":true,"aclTags":["test"]}
+2026-03-05T18:13:18.973163Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:18.977961Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:18.989341Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:19.926175Z DEBUG heascale_tui::api::client: create_preauthkey response status=400 Bad Request body={"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:13:19.926332Z ERROR heascale_tui::api::client: create_preauthkey HTTP error status=400 Bad Request body={"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:13:19.926412Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-05T18:13:19.926454Z ERROR heascale_tui::app: API error occurred context=creating preauthkey error=HTTP 400 Bad Request: {"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:13:25.731319Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:25.731392Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:13:25.731582Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:13:25.731752Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:25.735625Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:25.807025Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:26.062865Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:26.062918Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:13:26.704794Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-05T18:13:26.704863Z  INFO heascale_tui::api::client: list_apikeys loaded count=1
+2026-03-05T18:13:26.704904Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xbe9b368d0b8a294182ed725fe7213d90)
+2026-03-05T18:13:26.705267Z DEBUG heascale_tui::app: API keys loaded count=1
+2026-03-05T18:13:27.641188Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:27.641255Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:13:28.680569Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:28.680661Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:13:29.488641Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:29.488826Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:13:33.496159Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:33.496286Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:13:33.500077Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:13:33.500435Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:13:35.303695Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:13:35.303813Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:13:35.303835Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T18:13:35.303861Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:13:35.303874Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:35.306659Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:13:35.306685Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:13:35.360222Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:35.371990Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:36.299018Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:13:36.299141Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:13:36.299197Z  INFO heascale_tui::api::client: list_users loaded count=1
+2026-03-05T18:13:36.300206Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:13:36.300265Z DEBUG heascale_tui::app: Users loaded count=1
+2026-03-05T18:13:36.633303Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:36.633342Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:13:36.633764Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:13:36.633842Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:36.636127Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:36.647533Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:37.234841Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:37.234938Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:13:37.712777Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:13:37.713099Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:13:37.713269Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T18:13:37.713298Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:13:38.088103Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:38.088185Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:13:40.076954Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:40.076974Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:40.171786Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:40.172062Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:40.319475Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:40.319568Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:13:40.567880Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:40.567995Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:40.726803Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:40.726857Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:13:44.828014Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:44.828089Z DEBUG heascale_tui::app: Key event received key=Char('T')
+2026-03-05T18:13:44.929670Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:44.929715Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:45.170427Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:45.170520Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:13:45.364741Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:45.364863Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:45.728527Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:45.728617Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:13:47.273530Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:47.273725Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:47.354755Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:47.354774Z DEBUG heascale_tui::app: Key event received key=Char('e')
+2026-03-05T18:13:47.718539Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:47.718638Z DEBUG heascale_tui::app: Key event received key=Char('s')
+2026-03-05T18:13:48.241189Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:48.241328Z DEBUG heascale_tui::app: Key event received key=Char('t')
+2026-03-05T18:13:48.701941Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:48.701992Z DEBUG heascale_tui::app: Key event received key=Char('@')
+2026-03-05T18:13:49.063506Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:49.063594Z DEBUG heascale_tui::app: Key event received key=Char('m')
+2026-03-05T18:13:49.171233Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:49.171298Z DEBUG heascale_tui::app: Key event received key=Char('a')
+2026-03-05T18:13:49.509180Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:49.509331Z DEBUG heascale_tui::app: Key event received key=Char('i')
+2026-03-05T18:13:49.787524Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:49.787655Z DEBUG heascale_tui::app: Key event received key=Char('.')
+2026-03-05T18:13:50.538693Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:50.538903Z DEBUG heascale_tui::app: Key event received key=Backspace
+2026-03-05T18:13:50.783350Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:50.783405Z DEBUG heascale_tui::app: Key event received key=Char('l')
+2026-03-05T18:13:51.133897Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:51.133960Z DEBUG heascale_tui::app: Key event received key=Char('.')
+2026-03-05T18:13:51.387444Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:51.387525Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:13:51.523036Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:51.523107Z DEBUG heascale_tui::app: Key event received key=Char('o')
+2026-03-05T18:13:51.762862Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:51.762886Z DEBUG heascale_tui::app: Key event received key=Char(',')
+2026-03-05T18:13:52.110240Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:52.110305Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:13:52.110505Z DEBUG heascale_tui::api::client: create_user request method="POST" url=https://hedtl.serveirc.com/api/v1/user body={"display_name":"Test","email":"test@mail.co,","name":"test"}
+2026-03-05T18:13:52.110651Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:52.120472Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:52.131113Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:53.044266Z DEBUG heascale_tui::api::client: create_user response status=200 OK body={"user":{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}}
+2026-03-05T18:13:53.044321Z  INFO heascale_tui::api::client: create_user success user_name=test
+2026-03-05T18:13:53.044365Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xd0e325e72f2cd25a1498b3786a9ba2df)
+2026-03-05T18:13:53.044378Z DEBUG heascale_tui::app: User mutation success, refreshing users
+2026-03-05T18:13:53.044465Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:13:53.044490Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:53.047710Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:53.057223Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:53.994666Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:13:53.994950Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:13:53.995000Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:13:53.995139Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:13:53.995166Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:13:57.966694Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:57.966801Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:13:58.190038Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:13:58.190116Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:13:58.190284Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:13:58.190412Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:58.194151Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:58.289560Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:13:59.375206Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:13:59.375508Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:13:59.375556Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:13:59.375599Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:13:59.375770Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:13:59.385463Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:13:59.399272Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:14:00.241278Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:14:00.241533Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:14:00.241568Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:14:00.241680Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:14:00.247123Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:14:00.257341Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:14:01.193199Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]}]} user="1"
+2026-03-05T18:14:01.193309Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=3 user="1"
+2026-03-05T18:14:01.193344Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:14:01.193424Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:14:01.195685Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:14:01.203566Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:14:02.220158Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:14:02.220231Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:14:02.220252Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=3 user="3"
+2026-03-05T18:14:02.220314Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:14:02.223969Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:14:02.231198Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:14:03.208950Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="3"
+2026-03-05T18:14:03.209058Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="3"
+2026-03-05T18:14:03.209078Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=3
+2026-03-05T18:14:03.209170Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc38ddc68ec5606d2613547b14a8e3705)
+2026-03-05T18:14:03.209236Z DEBUG heascale_tui::app: PreAuth keys loaded count=3
+2026-03-05T18:14:06.195922Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:14:06.195967Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:14:10.843000Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:14:10.843022Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:14:10.843081Z DEBUG heascale_tui::api::client: create_preauthkey request method="POST" url=https://hedtl.serveirc.com/api/v1/preauthkey body={"user":"kibomibo","reusable":false,"ephemeral":false}
+2026-03-05T18:14:10.843123Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:14:10.846590Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:14:10.878530Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:14:11.918326Z DEBUG heascale_tui::api::client: create_preauthkey response status=400 Bad Request body={"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:14:11.919072Z ERROR heascale_tui::api::client: create_preauthkey HTTP error status=400 Bad Request body={"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:14:11.919226Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4ccffe9b8fce1f155b6a29888cb4c457)
+2026-03-05T18:14:11.920987Z ERROR heascale_tui::app: API error occurred context=creating preauthkey error=HTTP 400 Bad Request: {"code":3,"message":"proto: (line 1:9): invalid value for uint64 field user: \"kibomibo\"","details":[]}
+2026-03-05T18:15:30.467532Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:15:30.468936Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:15:30.469168Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:15:30.469477Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:15:38.137030Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:15:38.138480Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x24c2c7b4019f52d04936959de6efb2f0)
+2026-03-05T18:15:38.138496Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:15:38.138502Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:15:38.139214Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:38.141738Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:15:38.141762Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:15:38.611997Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:38.634170Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:39.523343Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:15:39.523766Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:15:39.523931Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:15:39.524015Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0ac98bc67a9403aaa10b725c30136411)
+2026-03-05T18:15:39.524059Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:15:44.705703Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:15:44.705855Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:15:44.706673Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:15:44.706868Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:44.712647Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:44.744188Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:44.998918Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:15:44.998975Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:15:44.999155Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:15:44.999252Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:45.002049Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:45.016003Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:45.768947Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:15:45.769263Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:15:45.769474Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x9e8dfd7855b714579211b187298b5dc5)
+2026-03-05T18:15:45.769499Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:15:46.287081Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:15:46.287258Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:15:46.287317Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:15:46.287433Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:15:46.287517Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:46.291476Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:46.323449Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:47.335876Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:15:47.335963Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:15:47.335980Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:15:47.336038Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:47.340199Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:47.348918Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:48.386495Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]}]} user="1"
+2026-03-05T18:15:48.387548Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=3 user="1"
+2026-03-05T18:15:48.387617Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:15:48.387746Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:48.394511Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:48.405921Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:49.308919Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:15:49.309046Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:15:49.309071Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=3 user="3"
+2026-03-05T18:15:49.309138Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:49.313246Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:49.320745Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:50.282753Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="3"
+2026-03-05T18:15:50.282820Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="3"
+2026-03-05T18:15:50.282840Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=3
+2026-03-05T18:15:50.282909Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc38ddc68ec5606d2613547b14a8e3705)
+2026-03-05T18:15:50.282950Z DEBUG heascale_tui::app: PreAuth keys loaded count=3
+2026-03-05T18:15:55.302594Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:15:55.302677Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:15:57.005642Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:15:57.006309Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:15:57.012899Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:15:57.013028Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:57.015727Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:57.027133Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:57.937922Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:15:57.938120Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:15:57.938182Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:15:57.938226Z DEBUG heascale_tui::api::client: create_preauthkey request method="POST" url=https://hedtl.serveirc.com/api/v1/preauthkey body={"user":"1","reusable":false,"ephemeral":false}
+2026-03-05T18:15:57.938387Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:57.950059Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:57.960738Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:58.878737Z DEBUG heascale_tui::api::client: create_preauthkey response status=200 OK body={"preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"4","key":"8df86e5b3d5bc49d386eeb0d077144096fe8fd7b6635a3cb","reusable":false,"ephemeral":false,"used":false,"expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:15:58.821538290Z","aclTags":[]}}
+2026-03-05T18:15:58.878987Z  INFO heascale_tui::api::client: create_preauthkey success
+2026-03-05T18:15:58.879073Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x965e2eb6d7ec07d049673fc113c8ee15)
+2026-03-05T18:15:58.879106Z DEBUG heascale_tui::app: PreAuthKey mutation success, refreshing preauthkeys
+2026-03-05T18:15:58.879542Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:15:58.879666Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:58.892471Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:58.905245Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:15:59.778547Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:15:59.778887Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:15:59.778945Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:15:59.778994Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:15:59.779199Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:15:59.788834Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:15:59.798609Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:00.964724Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:16:00.964841Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:16:00.964868Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:16:00.964914Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:00.967121Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:00.975312Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:02.017167Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"4","key":"8df86e5b3d5bc49d386eeb0d077144096fe8fd7b6635a3cb","reusable":false,"ephemeral":false,"used":false,"expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:15:58.821538290Z","aclTags":[]}]} user="1"
+2026-03-05T18:16:02.017402Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=4 user="1"
+2026-03-05T18:16:02.017445Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:16:02.017628Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:02.024968Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:02.033190Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:02.953937Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:16:02.954111Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:16:02.954143Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=3 user="3"
+2026-03-05T18:16:02.954259Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:02.959352Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:02.969227Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:04.163747Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="3"
+2026-03-05T18:16:04.163889Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="3"
+2026-03-05T18:16:04.163925Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=4
+2026-03-05T18:16:04.164830Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc38ddc68ec5606d2613547b14a8e3705)
+2026-03-05T18:16:04.164868Z DEBUG heascale_tui::app: PreAuth keys loaded count=4
+2026-03-05T18:16:13.818979Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:13.819043Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:16:14.106251Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:14.106321Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:16:22.594651Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:22.594850Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:16:22.599216Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:16:22.599453Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:22.605893Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:22.617853Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:23.587046Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null}]}
+2026-03-05T18:16:23.587645Z  INFO heascale_tui::api::client: list_apikeys loaded count=1
+2026-03-05T18:16:23.589474Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xbe9b368d0b8a294182ed725fe7213d90)
+2026-03-05T18:16:23.589547Z DEBUG heascale_tui::app: API keys loaded count=1
+2026-03-05T18:16:26.330306Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:26.330368Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:16:30.999754Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:30.999820Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:16:30.999952Z DEBUG heascale_tui::api::client: create_apikey request method="POST" url=https://hedtl.serveirc.com/api/v1/apikey body={}
+2026-03-05T18:16:31.000030Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:31.003300Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:31.022218Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:32.076256Z DEBUG heascale_tui::api::client: create_apikey response status=200 OK body={"apiKey":"FzquAYi.OWxiXosXl3BVIfLBg2MkJ6nv299k8lHf"}
+2026-03-05T18:16:32.076435Z  INFO heascale_tui::api::client: create_apikey success
+2026-03-05T18:16:32.076514Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xce84807465e50c1884a4a21d113f07bb)
+2026-03-05T18:16:32.076548Z DEBUG heascale_tui::app: ApiKey mutation success, refreshing apikeys
+2026-03-05T18:16:32.076969Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:16:32.077085Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:16:32.086324Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:16:32.097244Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:16:32.991796Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null},{"id":"3","prefix":"FzquAYi","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:16:31.966989231Z","lastSeen":null}]}
+2026-03-05T18:16:32.992089Z  INFO heascale_tui::api::client: list_apikeys loaded count=2
+2026-03-05T18:16:32.992995Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xbe9b368d0b8a294182ed725fe7213d90)
+2026-03-05T18:16:32.993052Z DEBUG heascale_tui::app: API keys loaded count=2
+2026-03-05T18:16:40.873033Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:40.873075Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:16:41.232946Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:41.232994Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:16:41.433765Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:41.433823Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:16:41.634855Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:41.635136Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:16:42.389017Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:42.389098Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:16:45.507135Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:16:45.507277Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:19:13.377265Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:13.377381Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:19:13.379138Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:19:13.387144Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:19:40.027430Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:19:40.029043Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x51f93fb25cef0583157aca8efa2b6338)
+2026-03-05T18:19:40.029056Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:19:40.029058Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:19:40.029736Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:40.035374Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:19:40.035398Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:19:40.645309Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:40.659535Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:41.587176Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:19:41.587326Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:19:41.587473Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:19:41.587977Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xea8f8b5ff731ce8d1d70253525518a5b)
+2026-03-05T18:19:41.588010Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:19:43.053761Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:43.053913Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:19:43.054472Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:19:43.054676Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:43.058299Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:43.070085Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:43.264052Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:43.264124Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:19:43.264382Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:19:43.264594Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:43.268395Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:43.283553Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:43.947877Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:19:43.948115Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:19:43.948184Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x661fb3b16a22cd1cf16ea57f238bef82)
+2026-03-05T18:19:43.948204Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:19:44.304992Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:19:44.305948Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:19:44.306012Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:19:44.306058Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:19:44.306159Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:44.311760Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:44.320464Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:45.435348Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:19:45.435621Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:19:45.435652Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:19:45.435804Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:45.442235Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:45.453960Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:46.458078Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"4","key":"8df86e5b3d5bc49d386eeb0d077144096fe8fd7b6635a3cb","reusable":false,"ephemeral":false,"used":false,"expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:15:58.821538290Z","aclTags":[]}]} user="1"
+2026-03-05T18:19:46.458172Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=4 user="1"
+2026-03-05T18:19:46.458198Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:19:46.458323Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:46.461318Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:46.468656Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:47.327596Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:19:47.327780Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:19:47.327810Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=3 user="3"
+2026-03-05T18:19:47.327917Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:47.331716Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:47.340728Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:19:48.498453Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="3"
+2026-03-05T18:19:48.498554Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="3"
+2026-03-05T18:19:48.498581Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=4
+2026-03-05T18:19:48.499422Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xb502b0f04fa8ca43d3275f3f211f122d)
+2026-03-05T18:19:48.499479Z DEBUG heascale_tui::app: PreAuth keys loaded count=4
+2026-03-05T18:19:49.629276Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:49.629375Z DEBUG heascale_tui::app: Key event received key=Down
+2026-03-05T18:19:50.246587Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:50.246676Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:19:50.255273Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4f3c22c0950276bba22d5f9ea5462df8)
+2026-03-05T18:19:59.582382Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:19:59.582485Z DEBUG heascale_tui::app: Key event received key=Tab
+2026-03-05T18:19:59.582723Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:19:59.582861Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:19:59.588475Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:19:59.600911Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:20:00.555973Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null},{"id":"3","prefix":"FzquAYi","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:16:31.966989231Z","lastSeen":null}]}
+2026-03-05T18:20:00.556605Z  INFO heascale_tui::api::client: list_apikeys loaded count=2
+2026-03-05T18:20:00.556707Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x20d09266e97a3bca9b94ca0e463c4bb9)
+2026-03-05T18:20:00.556743Z DEBUG heascale_tui::app: API keys loaded count=2
+2026-03-05T18:20:01.904371Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:20:01.904421Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:20:01.912770Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x4f3c22c0950276bba22d5f9ea5462df8)
+2026-03-05T18:23:36.770713Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:36.771156Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:23:36.772276Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:23:36.782545Z  INFO heascale_tui: heascale-tui exiting
+2026-03-05T18:23:47.916425Z  INFO heascale_tui: heascale-tui starting
+2026-03-05T18:23:47.917960Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x51f93fb25cef0583157aca8efa2b6338)
+2026-03-05T18:23:47.917968Z DEBUG heascale_tui::app: Init render message received
+2026-03-05T18:23:47.917976Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:23:47.918625Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:47.920805Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xc98db0e560db7de50be495386922f518)
+2026-03-05T18:23:47.920827Z DEBUG heascale_tui::app: Window resize event width=191 height=46
+2026-03-05T18:23:47.977505Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:47.987966Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:49.150162Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:23:49.150447Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:23:49.150560Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:23:49.151061Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xea8f8b5ff731ce8d1d70253525518a5b)
+2026-03-05T18:23:49.151106Z DEBUG heascale_tui::app: Users loaded count=2
+2026-03-05T18:23:49.596970Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:49.597034Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:23:49.597239Z DEBUG heascale_tui::api::client: list_nodes request method="GET" url=https://hedtl.serveirc.com/api/v1/node
+2026-03-05T18:23:49.597400Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:49.600499Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:49.666240Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:49.759696Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:49.759799Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:23:49.760157Z DEBUG heascale_tui::api::client: list_users request method="GET" url=https://hedtl.serveirc.com/api/v1/user
+2026-03-05T18:23:49.760274Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:49.764415Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:49.782563Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:49.924591Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:49.924683Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:23:49.925006Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:23:49.925166Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:49.930183Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:49.941840Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:50.076640Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:50.077026Z DEBUG heascale_tui::app: Key event received key=Right
+2026-03-05T18:23:50.530990Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:50.531103Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:23:50.531355Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:23:50.531581Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:50.537083Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:50.547963Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:50.719142Z DEBUG heascale_tui::api::client: list_users response status=200 OK
+2026-03-05T18:23:50.719445Z DEBUG heascale_tui::api::client: list_users response body body={"users":[{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},{"id":"3","name":"test","createdAt":"2026-03-05T18:13:52.863812017Z","displayName":"Test","email":"test@mail.co,","providerId":"","provider":"","profilePicUrl":""}]}
+2026-03-05T18:23:50.719492Z  INFO heascale_tui::api::client: list_users loaded count=2
+2026-03-05T18:23:50.719540Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=kibomibo user="kibomibo"
+2026-03-05T18:23:50.719663Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:50.724158Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:50.727104Z DEBUG heascale_tui::api::client: list_nodes response body body={"nodes":[{"id":"1","machineKey":"mkey:056a4432c0191343424939990500269009ba4471a74070c995a3a9897836b243","nodeKey":"nodekey:aa7e4121ac1ef5deb80ef215067b8ef1ba6efaeead8e8ae8d10b1fade84d9d72","discoKey":"discokey:be7769c2ce6f63d98b5dbd3969bf42bf8a4516c135dd39c0e10b1428fb6a002c","ipAddresses":["100.64.0.1","fd7a:115c:a1e0::1"],"name":"srv-vpn-lab","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:02:14.095139915Z","expiry":"2026-03-03T19:24:03.198433349Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},"createdAt":"2026-02-28T21:02:11.107671948Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"srv-vpn-lab","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"2","machineKey":"mkey:9b638323b6f2ea9bc60c298a1b75f150cb9322ca1fc327ca39b90a54a91ac12b","nodeKey":"nodekey:7f397fd8be9251881348a99b11b04464da0f8b082e7a475762d5747c5235575b","discoKey":"discokey:9193f907d0d6942183fb682094bad13ca9d138e28dacfab6a8fde38d0f54e831","ipAddresses":["100.64.0.2","fd7a:115c:a1e0::2"],"name":"kibomibombp","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-02-28T21:54:28.825029759Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},"createdAt":"2026-02-28T21:08:55.695130632Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"kibomibombp","online":false,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]},{"id":"3","machineKey":"mkey:754218410ea522dd5d1137ad9dc4e9c24cebfe503a5b3fec4c5278f2ca56876b","nodeKey":"nodekey:51cdb89f5788c2ffa87707c9e2b0949ef4fb51b872e9e07ea3f960f6b938c455","discoKey":"discokey:dac416b1b9c2e1a7ec38afc21db4311b27b8f90a7d53def217b457f524129963","ipAddresses":["100.64.0.3","fd7a:115c:a1e0::3"],"name":"vm3286105","user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"lastSeen":"2026-03-05T16:58:07.183088810Z","expiry":"0001-01-01T00:00:00Z","preAuthKey":{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},"createdAt":"2026-03-03T14:03:52.976304801Z","registerMethod":"REGISTER_METHOD_AUTH_KEY","forcedTags":[],"invalidTags":[],"validTags":[],"givenName":"vm3286105","online":true,"approvedRoutes":[],"availableRoutes":[],"subnetRoutes":[]}]}
+2026-03-05T18:23:50.727339Z  INFO heascale_tui::api::client: list_nodes loaded count=3
+2026-03-05T18:23:50.727466Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x661fb3b16a22cd1cf16ea57f238bef82)
+2026-03-05T18:23:50.727495Z DEBUG heascale_tui::app: Nodes loaded count=3
+2026-03-05T18:23:50.735223Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:50.814613Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null},{"id":"3","prefix":"FzquAYi","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:16:31.966989231Z","lastSeen":null}]}
+2026-03-05T18:23:50.814676Z  INFO heascale_tui::api::client: list_apikeys loaded count=2
+2026-03-05T18:23:50.815055Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x20d09266e97a3bca9b94ca0e463c4bb9)
+2026-03-05T18:23:50.815082Z DEBUG heascale_tui::app: API keys loaded count=2
+2026-03-05T18:23:51.450771Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null},{"id":"3","prefix":"FzquAYi","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:16:31.966989231Z","lastSeen":null}]}
+2026-03-05T18:23:51.450856Z  INFO heascale_tui::api::client: list_apikeys loaded count=2
+2026-03-05T18:23:51.451484Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x20d09266e97a3bca9b94ca0e463c4bb9)
+2026-03-05T18:23:51.451513Z DEBUG heascale_tui::app: API keys loaded count=2
+2026-03-05T18:23:51.581835Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]} user="kibomibo"
+2026-03-05T18:23:51.581902Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="kibomibo" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"kibomibo\": invalid syntax","details":[]}
+2026-03-05T18:23:51.581922Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=1 user="1"
+2026-03-05T18:23:51.581965Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:51.587196Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:51.596717Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:52.564822Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"1","key":"72e82754d0894c6e43b3073f1ca75f02b55b150dae953966","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T21:57:17.391631752Z","createdAt":"2026-02-28T20:57:17.393033637Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"2","key":"ea4c2f5abcb6f4cd9bb1b4bde9d1c4cc65fae8c547dff687","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-02-28T22:08:35.759044141Z","createdAt":"2026-02-28T21:08:35.760833753Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"3","key":"e1b0e77f141838a6e69f63b3574f0a210adef1f1283f0c07","reusable":false,"ephemeral":false,"used":true,"expiration":"2026-03-03T15:03:36.693660514Z","createdAt":"2026-03-03T14:03:36.695385308Z","aclTags":[]},{"user":{"id":"1","name":"kibomibo","createdAt":"2026-01-15T17:38:20.546434558Z","displayName":"KiboMibo","email":"mudpie@yandex.ru","providerId":"","provider":"","profilePicUrl":""},"id":"4","key":"8df86e5b3d5bc49d386eeb0d077144096fe8fd7b6635a3cb","reusable":false,"ephemeral":false,"used":false,"expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:15:58.821538290Z","aclTags":[]}]} user="1"
+2026-03-05T18:23:52.565164Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=4 user="1"
+2026-03-05T18:23:52.565230Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=test user="test"
+2026-03-05T18:23:52.565369Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:52.570937Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:52.599297Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:53.023136Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:53.023207Z DEBUG heascale_tui::app: Key event received key=Char('c')
+2026-03-05T18:23:53.595076Z ERROR heascale_tui::api::client: list_preauthkeys_for_user HTTP error status=400 Bad Request body={"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]} user="test"
+2026-03-05T18:23:53.595243Z  WARN heascale_tui::api::client: list_preauthkeys candidate failed candidate="test" error=HTTP 400 Bad Request: {"code":3,"message":"parsing field \"user\": strconv.ParseUint: parsing \"test\": invalid syntax","details":[]}
+2026-03-05T18:23:53.595276Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user request method="GET" url=https://hedtl.serveirc.com/api/v1/preauthkey?user=3 user="3"
+2026-03-05T18:23:53.595397Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:53.621091Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:53.630528Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:54.509426Z DEBUG heascale_tui::api::client: list_preauthkeys_for_user response body body={"preAuthKeys":[]} user="3"
+2026-03-05T18:23:54.509613Z  INFO heascale_tui::api::client: list_preauthkeys_for_user loaded count=0 user="3"
+2026-03-05T18:23:54.509647Z  INFO heascale_tui::api::client: list_preauthkeys loaded for all users count=4
+2026-03-05T18:23:54.509718Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0xb502b0f04fa8ca43d3275f3f211f122d)
+2026-03-05T18:23:54.510015Z DEBUG heascale_tui::app: PreAuth keys loaded count=4
+2026-03-05T18:23:55.429351Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:23:55.429438Z DEBUG heascale_tui::app: Key event received key=Enter
+2026-03-05T18:23:55.429617Z DEBUG heascale_tui::api::client: create_apikey request method="POST" url=https://hedtl.serveirc.com/api/v1/apikey body={}
+2026-03-05T18:23:55.429776Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:55.433665Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:55.444835Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:56.547073Z DEBUG heascale_tui::api::client: create_apikey response status=200 OK body={"apiKey":"bd8mZ_l.t7tbbXmPYBgOUELMJ992CZaAEYK1RJAP"}
+2026-03-05T18:23:56.547147Z  INFO heascale_tui::api::client: create_apikey success
+2026-03-05T18:23:56.547618Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x8a95b4aea0bdc8c97372e3ab10ca5c59)
+2026-03-05T18:23:56.547656Z DEBUG heascale_tui::app: ApiKey created, refreshing apikeys
+2026-03-05T18:23:56.558752Z DEBUG heascale_tui::api::client: list_apikeys request method="GET" url=https://hedtl.serveirc.com/api/v1/apikey
+2026-03-05T18:23:56.558860Z DEBUG reqwest::connect: starting new connection: https://hedtl.serveirc.com/
+2026-03-05T18:23:56.562674Z DEBUG hyper_util::client::legacy::connect::http: connecting to 5.188.179.82:443
+2026-03-05T18:23:56.573731Z DEBUG hyper_util::client::legacy::connect::http: connected to 5.188.179.82:443
+2026-03-05T18:23:57.518919Z DEBUG heascale_tui::api::client: list_apikeys response body body={"apiKeys":[{"id":"2","prefix":"XTr3rbH","expiration":"2026-06-01T18:55:12.529734634Z","createdAt":"2026-03-03T18:55:12.621650380Z","lastSeen":null},{"id":"3","prefix":"FzquAYi","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:16:31.966989231Z","lastSeen":null},{"id":"4","prefix":"bd8mZ_l","expiration":"0001-01-01T00:00:00Z","createdAt":"2026-03-05T18:23:56.482945993Z","lastSeen":null}]}
+2026-03-05T18:23:57.519194Z  INFO heascale_tui::api::client: list_apikeys loaded count=3
+2026-03-05T18:23:57.519282Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x20d09266e97a3bca9b94ca0e463c4bb9)
+2026-03-05T18:23:57.519488Z DEBUG heascale_tui::app: API keys loaded count=3
+2026-03-05T18:24:58.157785Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:24:58.157882Z DEBUG heascale_tui::app: Key event received key=Left
+2026-03-05T18:25:14.521503Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x2a727080e0effbd103eed3a131c22ac7)
+2026-03-05T18:25:14.521588Z DEBUG heascale_tui::app: Key event received key=Char('q')
+2026-03-05T18:25:14.522493Z DEBUG heascale_tui::app: App::update received message msg_type=TypeId(0x0fdaa1c27608361ea9eeef307a27f63a)
+2026-03-05T18:25:14.522832Z  INFO heascale_tui: heascale-tui exiting
